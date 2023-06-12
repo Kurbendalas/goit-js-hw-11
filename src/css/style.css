@@ -1,0 +1,102 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #96bad6;
+
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.input {
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 6px;
+  border-color: #b3bbc6;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #6788b5;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  border-color: #bbcce9;
+  background-color: #d0e0ed;
+  color: #939aa1;
+  transform: scale(1);
+  transition: transform 250ms ease-in;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: slategrey;
+  color: white;
+  transform: scale(1.1);
+}
+
+.button-search {
+  margin-left: 20px;
+}
+
+.button-load {
+  background-color: #d0e0ed;
+  margin-left: 50%;
+}
+
+.load-more {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.photo-card {
+  flex-basis: calc((100%-45px) / 5);
+}
+
+.gallery__image {
+  width: 350px;
+  height: 250px;
+  display: block;
+}
+
+.info {
+  width: 350px;
+  border-bottom: 1px solid #c3c2c2;
+  border-left: 1px solid #c3c2c2;
+  border-right: 1px solid #c3c2c2;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.info-item {
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 0 12px;
+  display: flex;
+}
